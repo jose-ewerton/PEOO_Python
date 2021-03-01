@@ -9,3 +9,11 @@ class Conta:
     def deposita(self, valor):
         self.saldo+=valor
         print(self.saldo)
+
+    
+    def __repr__(self):
+            return '{},{}'.format(self.numero, self.titular)
+
+    def __str__(self):
+        return self.__repr__()
+
