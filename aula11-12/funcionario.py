@@ -38,7 +38,10 @@ class Funcionario:
 
     @valor_por_hora.setter
     def valor_por_hora(self,valor_por_hora):
-        self.__valor_por_hora = valor_por_hora
+        if (valor_por_hora < 0):
+            print("Desculpe mais não existe valor por hora negativo!")
+        else:
+            self.__valor_por_hora = valor_por_hora
 
     @property
     def horas_trabalhadas(self):
