@@ -1,8 +1,12 @@
 from funcionario import Funcionario
 
 novoFuncionario = Funcionario()
-print(novoFuncionario.horas_trabalhadas)
-novoFuncionario.nome = "Ewerton"
-novoFuncionario.cpf = "12345678910"
-novoFuncionario.valor_por_hora = -25.50
-print(novoFuncionario.nome, novoFuncionario.cpf, novoFuncionario.valor_por_hora)
+novoFuncionario.nome = 'Luiz' #aqui eu estou criando um novo atributo e não acessando os da classe!
+
+novoFuncionario.cpf = '1234567890'
+print(novoFuncionario.nome,novoFuncionario.cpf)
+
+print(novoFuncionario.__dict__) #lista no formato de dicionario o que tenho no objeto da classe
+
+
+
