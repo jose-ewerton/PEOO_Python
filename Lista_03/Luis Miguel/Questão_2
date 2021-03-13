@@ -1,0 +1,12 @@
+"""
+Faça uma função que informe a quantidade de dígitos de um determinado número inteiro in-
+formado.
+"""
+
+
+def numero(a):
+    print(len(a))
+
+
+#pedindo a entrada em str permite contar os caracteres facilmente 
+numero(str(input("forneça um numero inteiro:  ")))
