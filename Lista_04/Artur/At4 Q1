@@ -1,0 +1,138 @@
+'''
+Construa um módulo com as seguintes funções:
+a. Uma função que recebe uma sequência de argumentos variáveis e retorna a soma total.
+b. Uma função que recebe um valor real e acrescenta 50%.
+c. Uma função que recebe parâmetros String variáveis e retorna à concatenação.
+d. Uma função que recebe uma sequência variável de parâmetros nomeados e retorna o 
+último elemento enviado (chave e valor).
+'''
+
+"""
+***BEM VINDO AO MANUAL BASICO DAS FUNÇÕES***
+Obs.:
+	Os if e elif serão usados para que a função seja totalmente reiniciada ou seja finalizada por completo."""
+
+def soma(Num):
+	
+	""" A única utilidade dessa função será apenas soma um número infinito de valores.
+	
+==================================
+		
+Num: é a variavel em formato de lista que irá armazenar os valores digitados pelo usuario.  """
+	    
+	print("Caso digite 0, a função será Reiniciada, ou digite -1 para ela ser finalizada")
+	Num = []
+	i = 0
+	while i == 0:
+		
+		Num.append(float(input("Digite um numero para adicionar a soma:")))
+	
+		print("A soma atual é de", sum(Num))
+		
+		if Num[i -1] == 0:
+			Num.clear()
+			print("A função foi reiniciada")
+			
+		elif Num[i - 1] == -1:
+			print("A função foi finalizada")
+			break
+			
+
+def acrescimo(valor):
+	
+	""" O objetivo dessa função é de apenas adicionar um acrescimo equivalente a 50% do valor inserido pelo usuario.
+	
+==================================
+
+B: variavel que receberá o valor vindo do usuario e mudará de valor a cada vez que for inserido um novo valor.
+	
+==================================
+==================================
+
+b: variavel que irá executar a operação do acrescimo dos 50%	"""
+	
+	print("Caso digite 0, a função será finalizada")
+	
+	i = 0
+	
+	while i == 0:
+		valor = float(input("Digite um numero para aumentar em 50%:"))
+		
+		b = (valor * 1.5)
+		print("O valor com o acrescimo será de", b)
+		if valor == 0:
+			
+			("A função foi finalizada")
+			break
+		
+
+def string(L):
+	
+	""" O objetivo dessa função é para receber valores em formato string do usuario e guardar elas em uma única variavel em formato de lista.
+	
+==================================
+	
+L: Variavel responsavel pelo armazenamento dos valores receber do usuario.	"""
+	
+	
+	print("Caso digite 0, a função será reiniciada, ou digite -1 para ser finalizada")
+	
+	L = []
+	
+	i = 0
+	
+	while i == 0:
+		
+		L.append(str(input("Digite alguma palavra:")))
+		
+		print("Na ordem alfabetica:")
+		print(sorted(L))
+		
+		if L[i - 1] == "0":
+			L.clear()
+			
+			print("A função foi reiniciada")
+		
+		elif L[i - 1] == "-1":
+			
+			print("A função foi finalizada")
+			
+			break
+
+def CeV(**valores):
+	
+	""" O objetivo dessa função é de receber as chaves e seus valores e armazenar elas em uma kwargs.
+	
+==================================
+	
+aC: Variavel responsavel por receber o nome dos valores.
+
+==================================
+==================================
+
+aV: Variavel responsavel por receber os valores.
+
+==================================
+==================================
+
+valores: kwarg responsavel por relacionar as chaves inserida em aC com os valores de aC, além disso vai servir para armazenar as chaves e seus respectivos valores. """
+	
+	print("Caso digite reset(como chave) e 0(como valor) a função sera reiniciada, e caso digite end(como chave) e -1(como valor) a função será finalizada")
+	
+	i = 0
+	
+	while i == 0:
+			aC = input("Diga o nome da chave:")
+			aV = input("Diga o nome de seu valor:")
+			
+			valores[aC] = aV
+			for C1,V1 in valores.items():
+				print(C1, "=", V1)
+				
+			if V1 == "0" and C1 == "reset":
+				print("A função foi reiniciada, todos valores anteriores foram apagados")
+				valores.clear()
+				
+			elif V1 == "-1" and C1 == "end":
+				print("A função foi finalizada")
+				break
