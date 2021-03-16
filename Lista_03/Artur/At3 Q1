@@ -1,0 +1,29 @@
+'''
+Faça um programa, cum uma função que necessite de um número variável de argumentos não 
+
+nomeados e forneça a soma e quantidade de argumentos informados.
+'''
+
+def Numero(A):
+	A = []
+	Re = input("Vai usar com letras ou numeros, responda usando L para letras e N para Numeros:")
+	
+	if Re == "N":
+		i = 0
+		while 0 < 1:
+			A.append(float(input("Digite um numero:")))
+			
+			print("Numero de argumentos armazenados:")
+			print(len(A))
+			print("Soma total dos argumentos")
+			print(sum(A))
+	
+	elif Re == "L":
+		i = 0
+		while 0 < 1:
+			A.append((input("Digite um Caractere:")))
+			
+			print("Numero de argumentos armazenados:")
+			print(len(A))
+
+Numero(1)	
