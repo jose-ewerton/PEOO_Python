@@ -1,0 +1,11 @@
+import Q1at4
+
+print(Q1at4.soma(1))
+
+print(Q1at4.acrescimo(1))
+
+print(Q1at4.string(1))
+
+print(Q1at4.CeV())
+
+help(Q1at4)
