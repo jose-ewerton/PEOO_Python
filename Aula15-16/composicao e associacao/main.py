@@ -7,7 +7,7 @@ dep = Departamento("Logística",1) #como pegar esse departamento e inserir na em
 
 
 #Agregação
-
+print("------------------AGREGAÇÃO---------------------------")
 dep.inserir_funcionario(func)  #agregação do funcionario no departamento
 dep.inserir_funcionario(func2)
 dep.inserir_funcionario(func3)
@@ -28,11 +28,11 @@ print(func.nome)
 
 
 #forma correta
-
+print("------------------COMPOSIÇÃO---------------------------")
 emp = Empresa("TecnoVida","00.000.000/0001")
 emp.inserir_departamento("TI","001")
 dep2 = emp.acessar_departamentos("001")
-print(dep2.nome_departamento)
+#print(dep2.nome_departamento)
 dep2.inserir_funcionario(func)
 dep2.inserir_funcionario(func2)
 dep2.inserir_funcionario(func3)
@@ -41,7 +41,7 @@ dep2.listar_funcionarios_no_dep()
 emp.listar_departamentos()
 emp.total_func_empresa()
 
-print("---------------------------------------------")
+print("--------------------INSERINDO MAIS UM DEPARTAMENTO E FUNCIONARIOS-------------------------")
 emp.inserir_departamento("Administração","002")
 dep2 = emp.acessar_departamentos("002")
 print(dep2.nome_departamento)
@@ -55,6 +55,18 @@ emp.total_func_empresa()
 
 
 
+
+print("--------------------INSERINDO MAIS UM DEPARTAMENTO E FUNCIONARIOS-------------------------")
+emp.inserir_departamento("RH","003")
+dep2 = emp.acessar_departamentos("003")
+print(dep2.nome_departamento)
+dep2.inserir_funcionario(func)
+dep2.inserir_funcionario(func2)
+dep2.inserir_funcionario(func3)
+dep2.listar_funcionarios_no_dep()
+
+emp.listar_departamentos()
+emp.total_func_empresa()
 
 
 

@@ -21,8 +21,10 @@ class Empresa:
             
             
     def total_func_empresa(self):
+        contador = 0
         for departamento in self.departamentos:
-            self.total_funcionarios += departamento.total_func()
+            contador += departamento.total_func()
+        self.total_funcionarios = contador
         print(f'Total de funcionários da empresa: {self.total_funcionarios}')
 
 
