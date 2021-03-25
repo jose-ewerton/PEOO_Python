@@ -7,17 +7,23 @@ class Empresa:
         self.departamentos = []
         self.total_funcionarios = 0
 
-    def inserir_departamento(self,dep):
-        self.departamentos.append(dep)
+    def inserir_departamento(self,nome,sala):
+        self.departamentos.append(Departamento(nome,sala))
     
     def listar_departamentos(self):
         for departamento in self.departamentos:
             print(f"Nome: {departamento.nome_departamento}, Sala: {departamento.sala}, Total de funcionários: {departamento.numero_funcionarios}")
+
+    def acessar_departamentos(self,sala):
+        for departamento in self.departamentos:
+            if departamento.sala == sala:
+                return departamento
+            
             
     def total_func_empresa(self):
         for departamento in self.departamentos:
             self.total_funcionarios += departamento.total_func()
-        return self.total_funcionarios
+        print(f'Total de funcionários da empresa: {self.total_funcionarios}')
 
 
 
