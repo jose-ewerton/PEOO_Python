@@ -8,7 +8,7 @@ class Empresa:
         self.total_funcionarios = 0
 
     def inserir_departamento(self,nome,sala):
-        self.departamentos.append(Departamento(nome,sala))
+        self.departamentos.append(Departamento(nome,sala)) #aqui que acontece a composição
     
     def listar_departamentos(self):
         for departamento in self.departamentos:
@@ -23,9 +23,10 @@ class Empresa:
     def total_func_empresa(self):
         contador = 0
         for departamento in self.departamentos:
-            contador += departamento.total_func()
+            contador += departamento.total_func()  #contar total de funcionarios por departamento
         self.total_funcionarios = contador
         print(f'Total de funcionários da empresa: {self.total_funcionarios}')
+
 
 
 
@@ -41,7 +42,7 @@ class Departamento:
         self.numero_funcionarios += 1
 
     def listar_funcionarios_no_dep(self):
-        print(f'Total de funcionários: {self.numero_funcionarios}')
+        print(f'Total de funcionários no departamento {self.nome_departamento}: {self.numero_funcionarios}')
         for funcionario in self.funcionarios:
             print(funcionario.nome)
     
