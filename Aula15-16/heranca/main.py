@@ -15,4 +15,14 @@ g.alimentacao_adulta()  #visivel ou só existe na classe filha (Gato)
 
 c = Cachorro("Cachorro",20)
 print(c.nome,c.peso,c.som)
+c.alimentacao_filhote()
+c.alimentacao_adulta()
 
+'''
+#herança múltipla e polimorfismo
+Lista 1,2,3,4,5,6
+50% da nota
+
+Mini-projeto individual
+50%
+'''

@@ -77,6 +77,3 @@ del emp
 
 print(dep2)
 
-
-
-

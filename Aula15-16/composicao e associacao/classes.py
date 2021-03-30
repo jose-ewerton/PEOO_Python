@@ -9,6 +9,8 @@ class Empresa:
 
     def inserir_departamento(self,nome,sala):
         self.departamentos.append(Departamento(nome,sala)) #aqui que acontece a composição
+        for item in self.departamentos:
+            print(item)
     
     def listar_departamentos(self):
         for departamento in self.departamentos:
