@@ -25,4 +25,12 @@ Lista 1,2,3,4,5,6
 
 Mini-projeto individual
 50%
+
+Aquecimento - Defina uma classe ObjetoGrafico com atributos cor_de_preenchimento, preenchida, cor de contorno
+
+3 classe Retangulo, Circulo e Triangulo
+Todas devem ser subclasses de ObjetoGrafico e possuir os métodos área e perímetro
+
 '''
+
+

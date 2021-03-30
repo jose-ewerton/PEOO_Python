@@ -1,4 +1,4 @@
-class Mamifero:
+class Mamifero (object): #sempre é bom que as suas classes herdem de objetc do python
 
     def __init__(self, nome="Animal",peso = 0):
         self.nome = nome
@@ -14,6 +14,7 @@ class Gato(Mamifero): #Gato herda os atributos e métodos da classe manifero (ex
 
 class Cachorro(Mamifero):
     def __init__(self,nome,peso):
+        #super(Cachorro,self).__init__(nome,peso) o python reconhece sem os parametros
         super().__init__(nome,peso)
         self.som = "Latir"
     
