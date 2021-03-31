@@ -1,0 +1,37 @@
+class Veiculo:
+	def  __init__(self, marca, modelo, cor, ano, estado, conversivel):
+		self.marca = marca
+		self.modelo = modelo
+		self.cor = cor
+		self.ano = ano
+		self.estado = estado
+		self.conversivel = conversivel 
+	
+	def caracteristicas(self):
+		 v = Veiculo
+		 v.marca = input("qual a marca?:")
+		 v.modelo = input("qual o modelo?:")
+		 v.cor = input("qual a cor?:")
+		 v.ano = input("qual o ano?:")
+		 print(f"a marca eh {v.marca}")
+		 print(f"o modelo eh {v.modelo}")
+		 print(f"o carro eh {v.cor}")
+		 print(f"o carro foi lancado em {v.ano}")
+			
+			
+	def analise(self):
+		v = Veiculo
+		v.estado = input("o carro eh novo?:  ")
+		v.conversivel = input("eh conversivel?:  ")
+			    
+		if v.estado == 'novo'  == 'sim':	    
+		    print("eh um assalto, passa a chave e vaza")
+		if v.conversivel ==  'sim':
+			print("carrão ein?, bora da um rolê")
+			
+		elif v.estado == 'nao':
+		    print("show!, queria ter um :(")
+
+
+Veiculo.caracteristicas("a")
+Veiculo.analise("a")
