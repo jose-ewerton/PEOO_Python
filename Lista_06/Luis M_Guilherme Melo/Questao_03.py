@@ -32,8 +32,8 @@ class Pessoa:
 	  self.lista.append(endereco)
 	
 	def listar_enderecos(self):
-	  for enderecos in self.lista:
-	    print(enderecos.numero, enderecos.rua, enderecos.cidade, enderecos.estado, enderecos.pais)
+	  for endereco in self.lista:
+	    print(endereco.numero, endereco.rua, endereco.cidade, endereco.estado, endereco.pais)
 		
 		
 
@@ -47,7 +47,12 @@ class Endereco:
 
 
 gente = Pessoa(69420, "luis", 704)
-#print(Pessoa.nome, Pessoa.rg, Pessoa.cpf)
+print(gente.nome, gente.rg, gente.cpf)
 p1= Endereco(294, "cap jose", "cm", "RN", "Brazil")
+p2= Endereco(294, "cap jose", "cm", "PB", "Brazil")
+p3= Endereco(294, "cap jose", "cm", "SP", "Brazil")
 gente.inserir_endereco(p1)
+gente.inserir_endereco(p2)
+gente.inserir_endereco(p3)
 gente.listar_enderecos()
+

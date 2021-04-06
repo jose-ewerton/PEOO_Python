@@ -1,20 +1,20 @@
 '''Defina os atributos e métodos das seguintes classes:
 Pessoa:'''
 
-class pessoa:
+class Pessoa:
 	
-	def __init__(self, Nome, Idade, Genero, VM, Saude,PM):
+	def __init__(self, nome, idade, genero, VM, Saude,PM):
 		
 		self.nome = nome
 		self.idade = idade
 		self.genero = genero
-		self.vm = vm
-		self.pm = pm
+		self.vm = VM
+		self.pm = PM
 		self.saude = Saude	
 		
 	def base(self):
 		
-		p = pessoa
+		p = Pessoa
 			
 		p.nome = input("Nome: ")
 		p.idade = int(input("Idade: "))
@@ -24,18 +24,18 @@ class pessoa:
 		print("Idade:", p.idade)
 		print("Gênero:", p.genero)
 	
-	def açoes(self):
+	def acoes(self):
 		
-		p = pessoa
+		p = Pessoa
 		
 		p.vm = input("Está Acordado ou Dormindo:")
 		
 		if p.vm == "Acordado" or p.vm =="acordado":
 			p.saude = input("Como está a sua saúde:")
 			p.pm = input("Está parado ou se movimentando:")
-			print(p.nome, "estar", p.vm,",com a saúde",p.saude," e também estar",p.pm)
+			print(p.nome, "está", p.vm,",com a saúde",p.saude," e também está",p.pm)
 		elif p.vm == "Dormindo" or p.vm == "dormindo":
 			print(p.nome, "está dormindo")
-
-pessoa.base("a")
-pessoa.açoes("a")
+			
+Pessoa.base("a") #chamada do método pela classe
+Pessoa.acoes("a")
