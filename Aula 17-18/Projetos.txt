@@ -1,0 +1,18 @@
+Trabalhos de PEOO
+
+1. Formulario de cadastro de produtos com interface gráfica e opções de adicionar, atualizar, deletar e listar os produtos (3 integrantes)
+
+2. Formulario de agendamento de consultas com as mesmas opções (adicionar, atualizar, deletar e listar), a lista deve ser 
+apresentada por ordem de atendimento / prioridade. (3 integrantes)
+
+3. Rede social sem chat com opção de postar, editar, listar postagens, deletar, login e logout. (3 integrantes)
+
+4. Formulário de cadastro de espécies por categoria, mesmas funçoes de cadastro de produtos mais, adicionando-os a sua categoria (3 integrantes)
+
+5. Lista de despesas: posso colocar todas as despesas que tenho para uma semana, todas as funcionalidades de antes e dar prioridades as despesas mais importantes, descartar despesa paga, alterar prioridade... (4 pessoas)
+
+
+
+Arthur, Felipe Damião e Diogo - (1)
+Luis Miguel, Guilherme Melo, Guilherme Ferreira - (4)
+

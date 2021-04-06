@@ -1,7 +1,0 @@
-O módulo prove os mecanismo para criação de interfaces GUI em python;
-
-Estudos iniciais
-
-Compilando o Hello Word! (ex_01);
-Compilando com boxlayout (ex_02);
-Compilando com evento no botão (ex_03);

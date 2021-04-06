@@ -10,11 +10,13 @@ from kivy.uix.boxlayout import BoxLayout #cria um box e eu consigo botar mais de
 
 class MinhaClasse(App):
     def build(self):
-        #return Button(text= 'Botão')
+        btn =  Button(text= 'Botão')
         #return Label(text = 'Olá mundo!')
-        label = Label (text = 'Olá mundo')
-        label.font_size = 50
-        return label
+        label = Label (text = 'Olá mundo',font_size = 50) #instancia da classe Label
+        box = BoxLayout()
+        box.add_widget(label)
+        box.add_widget(btn)
+        return box
 
         
 MinhaClasse().run()
