@@ -67,6 +67,44 @@ chamado o widget superior/mãe/boot
 	CodeInput:
 		font_size: 50
 
+8 - Propriedade facilitam as coisas no Kivy
+	Compartilhar as mesmas propriedades entre os widgets
+
+9 - No kv objetos entre < > referenciam elementos queestão no meu código /sendo chamados
+
+10 - um pouco de estrutura
+	<MyBox> = class MyBox(Extensão)
+	Label -> text = root.meutexto = meu_texto = StringProperty('Um texto')
+	Button ->on_press: root.evento() = def evento(self,btn)...
+
+11 - Requests para web
+	Uma coisa importante é fazer com que aplicativo voe
+	O kivy tem um request dentro dele não bloqueante, isso significa que ele não trava o aplicativo
+e vai executar em outra Thread 
+
+existe o import do kivy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
