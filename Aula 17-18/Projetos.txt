@@ -13,9 +13,95 @@ apresentada por ordem de atendimento / prioridade. (3 integrantes)
 
 
 
+6 - Professor - Criar um serviço de reservas para um campo de futebol Society, onde o usuário pode marcar, 
+deletar, atualizar e listar seus agendamentos
+
+
 Arthur, Felipe Damião e Diogo - (1)
 Luis Miguel, Guilherme Melo, Guilherme Ferreira - (4)
 Pedro Lucas, Felipe Victor, Evandro (1)
+Clara Lima, Iuri Souza, Maria Clara (2)
+
+
+
+1-
+pip install kivy
+	baixa algumas bibliotcas, kivy-garden lugar onde pessoas como eu que não sou mantenedor podem contribuir com 
+widgets
+kivy garden tem recursos mais avançados
+
+para passar funções dentro de botões (eventos)
+btn = Button (on_press = on_press, on_release = on_release)
+
+2- kv lang
+Usar extensões no VS code
+Linguagem de marcação similar ao html de widgets
+Melhora muito a legibilidade do código python
+Aqui funciona a identicação do python também
+
+3 - Como rodar o kv...?
+	Uma opção é retornar o kv dentro do main.py
+	coloca o nome do arquivo entre < >
+	chama o arquivo no código principal, cria uma classe que instância o kv e a instancia boxlayout 
+usada no arquivo kv (como se fosse o container principal, seria interessante usar uma chave especifica), é 
+chamado o widget superior/mãe/boot
+
+4 - kivy kazam
+	uma lib interessante que permite criar interfaces reenderizadas em tempo de execução;
+	para usar acessar o link no git e criar um clone, ajuda a visualizar o design
+	o autor é contra design que vai arrastando e criando...acho que eu também...
+
+5 - alguns widgets
+	UX widgets - Label, Button, Image
+	Layouts - Float,Box,Anchor
+	Complex - VideoPlayer, FileChooser
+	Behavior - Scatter, Stencil
+	Screen - ScreenManager
+
+6 - Exemplo para criar e rodar um VideoPlayer
+	add ffpyplayer
+	VideoPlayer:
+		source:'video.mp4'
+
+7 - Exemplo CodeInput para criar editor de código:
+	CodeInput:
+		font_size: 50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
