@@ -1,20 +1,57 @@
 Trabalhos de PEOO
 
-1. Formulario de cadastro de produtos com interface gráfica e opções de adicionar, atualizar, deletar e listar os produtos (3 integrantes)
+1. Formulario de cadastro de produtos com interface gráfica e opções de adicionar, atualizar, deletar e 
+listar os produtos (3 integrantes)
 
-2. Formulario de agendamento de consultas com as mesmas opções (adicionar, atualizar, deletar e listar), a lista deve ser 
-apresentada por ordem de atendimento / prioridade. (3 integrantes)
+	Criar a classe Produto
+		Atributos: id do produto, nome, marca, preço, lista_produtos
+		Métodos: Adicionar, Listar, Atualizar e Deletar
 
-3. Rede social sem chat com opção de postar, editar, listar postagens, deletar, login e logout. (3 integrantes)
 
-4. Formulário de cadastro de espécies por categoria, mesmas funçoes de cadastro de produtos mais, adicionando-os a sua categoria (3 integrantes)
+2. Formulario de agendamento de consultas com as mesmas opções (adicionar, atualizar, deletar e listar), a 
+lista deve ser apresentada por ordem de atendimento / prioridade. (3 integrantes)
 
-5. Lista de despesas: posso colocar todas as despesas que tenho para uma semana, todas as funcionalidades de antes e dar prioridades as despesas mais importantes, descartar despesa paga, alterar prioridade... (4 pessoas)
+	Criar a classe Consulta
+		Atributos: id consulta, horário, médico, valor, lista_agendamentos
+		Métodos: Adicionar, Listar (Por ondem de atendidamento), Atualizar e Deletar
+
+3. Rede social sem chat com opção de postar, editar, listar postagens, deletar. 
+(3 integrantes)
+
+	Criar a classe Postagem
+		Atributos: id postagem, horário, descrição, autor, lista_postagens
+		Métodos: Adicionar, Listar, Atualizar e Deletar 
+
+4. Formulário de cadastro de espécies por categoria, mesmas funçoes de cadastro de produtos mais, 
+adicionando-os a sua categoria (3 integrantes)
+
+	Criar a classe Especie:
+		Atributos: id do animal, categoria, peso, alimentação, listar (listar por categoria, eu 
+		informo a categoria e lista apenas os animais daquela categoria, listar geral seria listar
+		todos...) 
+
+5. Lista de despesas: posso colocar todas as despesas que tenho para uma semana, todas as funcionalidades 
+de antes e dar prioridades as despesas mais importantes, descartar despesa paga, alterar prioridade... 
+(4 pessoas)
+	
+	Criar a classe Despesa:
+		Atributos: id despesa, descricao, valor, data_da_despesa, prioridade, lista_despesas
+		Metodos:  Adicionar, deletar, listar (Geral ou por prioridade), alterar prioridade  
 
 
 
 6 - Professor - Criar um serviço de reservas para um campo de futebol Society, onde o usuário pode marcar, 
 deletar, atualizar e listar seus agendamentos
+
+
+QUESTÕES SOBRE NOTAS: 50% É DAS LISTAS, 50% É DESSE PROJETO (25% PELA IMPLEMENTAÇÃO CORRETA E SEM INTERFACE
+E MAIS 25% PELA INTERFACE CORRETA)
+
+((N1*2) + (N2*2) + (N3*3) + (N4*3))/10
+N1 = L1,L2
+N2 = L3,L4
+N3 = L5,L6
+N4 = Projeto 
 
 
 Arthur, Felipe Damião e Diogo - (1)
@@ -26,9 +63,9 @@ Clara Lima, Iuri Souza, Maria Clara (2)
 
 1-
 pip install kivy
-	baixa algumas bibliotcas, kivy-garden lugar onde pessoas como eu que não sou mantenedor podem contribuir com 
-widgets
-kivy garden tem recursos mais avançados
+	1.1. baixa algumas bibliotcas, kivy-garden lugar onde pessoas como eu que não sou mantenedor podem 
+	contribuir com widgets
+	1.2. kivy garden tem recursos mais avançados
 
 para passar funções dentro de botões (eventos)
 btn = Button (on_press = on_press, on_release = on_release)
