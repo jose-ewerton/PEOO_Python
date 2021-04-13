@@ -15,32 +15,19 @@ class Animal:
 
     def correr(self):
         print(f'O {self.especie} esta correndo.')
-        self.correndo = True
-
-    def parar_correr(self):
-        if not self.correndo:
-            print(f'O {self.especie} parou de correr.')
-            return
-
-        print(f'O {self.especie} parou de correr.')
-        self.correndo = False
 
     def lamber(self):
         print(f'O {self.especie} esta se lambendo.')
-        self.lambendo = True
 
 if __name__=="__main__":
         especie = input("Informe a especie do animal: ")
         cor = input("Informe a cor do {}: ".format(especie))
         porte = input("Informe o porte do {} (pequeno, medio, ou grande): ".format(especie))
         a1 = Animal(especie, cor, porte)
-        corre = input("O {} esta correndo (sim ou nao)? ".format(especie)).upper()
+        corre = input("O {} esta correndo, sim ou não? ".format(especie)).upper()
         if corre == "SIM":
             a1.correr()
-        elif corre == "NAO":
-            buscar = input("O {} esta se lambendo (sim ou nao)? ".format(especie)).upper()
-            if buscar =="SIM":
+        elif corre == "NÃO":
+            lambe = input("O {} esta se lambendo, sim ou não? ".format(especie)).upper()
+            if lambe == "SIM":
                 a1.lamber()
-        
-
-
