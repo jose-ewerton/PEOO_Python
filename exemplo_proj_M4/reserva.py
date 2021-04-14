@@ -1,0 +1,63 @@
+class Reserva:
+    def __init__(self, chave=0,dia=None, horario=None,valor=None):
+        self.chave = chave
+        self.dia = dia
+        self.horario = horario
+        self.valor = valor
+        self.lista_reservas =[]
+    
+    def adicionar_reserva(self,dia, horario,valor):
+        self.chave += 1
+        #verificar s eo horario está disponivel naquele dia
+        self.lista_reservas.append(Reserva(self.chave,dia,horario,valor))
+        return f'Reserva realizada com sucesso! Guarde sua chave de acesso {self.chave}'
+
+    def listar_reservas(self):
+        for item in self.lista_reservas:
+            print(item.chave,item.dia,item.horario,item.valor)
+
+    def deletar_reserva(self,cod):
+        cond = 0
+        for reserva in self.lista_reservas:
+            if (cod == reserva.chave):
+                cond = 1
+                print ( f'Removendo a reserva {reserva.chave}, {reserva.dia}, {reserva.horario}, {reserva.valor}')
+                self.lista_reservas.remove(reserva)
+        if  not cond:
+            print( 'Reserva não existe!')
+    
+    def atualizar_reserva(self,**kwargs):
+        cod = 0
+        for variavel,atributo in kwargs.items():
+            if (variavel == 'chave'):
+                cod = int(atributo)
+                break
+        print(f'Código encontrado: {cod}')
+        for item in self.lista_reservas:
+            if (item.chave == cod):
+                for variavel,atributo in kwargs.items():
+                    if (variavel == 'dia'):
+                        item.dia = atributo 
+                    if (variavel == 'horario'):
+                        item.horario = atributo 
+                    if (variavel == 'valor'):
+                        item.valor = atributo
+                #print(item.chave, item.dia,item.horario,item.valor)
+                self.lista_reservas.insert(item.chave,item)
+                self.lista_reservas.remove(item)
+           
+if (__name__ == '__main__'):
+    r = Reserva()
+    print(r.adicionar_reserva('Quinta','12:00', 'R$ 30,00'))
+    print(r.adicionar_reserva('Sexta','10:00', 'R$ 30,00'))
+    print(r.adicionar_reserva('Sábado','11:00', 'R$ 30,00'))
+    #r.listar_reservas()
+    #r.deletar_reserva(2)
+    r.listar_reservas()
+    r.atualizar_reserva(chave = 2,dia = 'Segunda',horario = '19:00', valor = 'R$ 60,00')
+    r.listar_reservas()
+    r.atualizar_reserva(chave = 1,dia = 'Terça',horario = '19:00', valor = 'R$ 60,00')
+    r.listar_reservas()
+    #r.listar_reservas()
+
+

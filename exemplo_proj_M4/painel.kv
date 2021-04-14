@@ -1,0 +1,89 @@
+#:kivy 2.0.0
+
+<Painel>:
+    layout:layout
+    labels:labels
+    textinput:textinput
+    FloatLayout:
+        id:layout
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text: 'Inserir'
+            on_press: root.adicionar()
+            font_size: 20 
+            size_hint:(.3, .1)
+            pos_hint:{'x':.05, 'y':.85}
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text: 'Atualizar'
+            on_press: root.adicionar()
+            font_size: 20 
+            size_hint:(.3, .1)
+            pos_hint:{'x':.05, 'y':.70}
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text: 'Listar'
+            on_press: root.adicionar()
+            font_size: 20 
+            size_hint:(.3, .1)
+            pos_hint:{'x':.05, 'y':.55}
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text: 'Deletar'
+            on_press: root.adicionar()
+            font_size: 20 
+            size_hint:(.3, .1)
+            pos_hint:{'x':.05, 'y':.40}
+
+        Label:
+            id:labels
+            opacity:1
+            text: 'Chave'
+            font_size: 20 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.8}
+        TextInput:
+            id:textinput
+            opacity:1
+            font_size: 15 
+            size_hint:(.3, .05)
+            pos_hint:{'x':.6, 'y':.78}
+        Label:
+            id:labels
+            opacity:1
+            text: 'Dia'
+            font_size: 20 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.7}
+        TextInput:
+            id:textinput
+            opacity:1
+            font_size: 15 
+            size_hint:(.3, .05)
+            pos_hint:{'x':.6, 'y':.68}
+        Label:
+            id:labels
+            opacity:1
+            text: 'Horario'
+            font_size: 20 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.6}
+        TextInput:
+            id:textinput
+            opacity:1
+            font_size: 15 
+            size_hint:(.3, .05) #x,y
+            pos_hint:{'x':.6, 'y':.58}
+        Label:
+            id:labels
+            opacity:1
+            text: 'Valor'
+            font_size: 20 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.5}
+        TextInput:
+            id:textinput
+            opacity:1
+            font_size: 15 
+            size_hint:(.3, .05)
+            pos_hint:{'x':.6, 'y':.48}
