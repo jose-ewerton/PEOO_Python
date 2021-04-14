@@ -6,11 +6,13 @@
     label2:label2
     label3:label3
     label4:label4
+    label5:label5
 
     textinput1:textinput1
     textinput2:textinput2
     textinput3:textinput3
     textinput4:textinput4
+
     FloatLayout:
         id:layout
         Button:
@@ -94,3 +96,18 @@
             font_size: 15 
             size_hint:(.3, .05)
             pos_hint:{'x':.6, 'y':.48}
+        Label:
+            id:label5
+            opacity:0
+            color: 'red'
+            text: ''
+            font_size: 10 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.4}
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text: 'Enviar'
+            on_press: root.enviar()
+            font_size: 15 
+            size_hint:(.2, .05)
+            pos_hint:{'x':.6, 'y':.3}
