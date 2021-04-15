@@ -24,6 +24,6 @@ for a in range (10):
 
 Impares = sum (set (imp))
 
-print ("A soma dos números impares são de", Impares)
-
 print ("A soma dos números primos são de", b)
+
+print ("A soma dos números impares são de", Impares)
