@@ -35,13 +35,13 @@ if x5 == "S":
 	total += [1]
 total = len(total)
 
-if r < 2:
+if total < 2:
 	a = ("Inocente")
-elif r == 2:
+elif total == 2:
 	a = ("suspeito")
-elif 2 > r or r <= 4:
+elif 2 > total or total <= 4:
 	a = ("cumplice")
-elif r > 4:
+elif total > 4:
 	a = ("culpado")
 
 print("você é", a, "e tem", total, "provas contra você.")
