@@ -35,8 +35,9 @@ class Painel(FloatLayout):
         self.btn1.opacity = 0
         self.btn2.opacity = 0
 
-    def adicionar(self):
+    def inserir(self):
         self.limpar_widget()
+        #construindo o formulário de adicionar reserva
         self.label2.opacity = 1
         self.label3.opacity = 1
         self.label4.opacity = 1
@@ -46,9 +47,9 @@ class Painel(FloatLayout):
         self.label5.opacity = 1
         self.btn1.opacity = 1 
         self.label5.text = 'Preencha todos os campos' 
+        self.enviar()
 
     def enviar(self):
-        print('teste')
         if (self.textinput2.text == "" or self.textinput3.text == "" or self.textinput4.text == ""):
             self.label5.text = 'Preencha todos os campos'
         else:
