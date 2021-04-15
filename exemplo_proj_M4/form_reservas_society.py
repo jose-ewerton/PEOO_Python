@@ -18,35 +18,13 @@ class Painel(FloatLayout):
     textinput4 = ObjectProperty(None)
 
     btn = ObjectProperty(None)
+    btn2 = ObjectProperty(None)
     lista = ObjectProperty(None)
 
     reservas = Reserva()
 
-    def adicionar(self):
-        self.lista.opacity = 0
-        #self.label1.opacity = 1
-        self.label2.opacity = 1
-        self.label3.opacity = 1
-        self.label4.opacity = 1
-        #self.textinput1.opacity = 1
-        self.textinput2.opacity = 1
-        self.textinput3.opacity = 1
-        self.textinput4.opacity = 1  
-        self.enviar()    
-
-    def enviar(self):
-        print('teste')
-        if (self.textinput2.text == "" or self.textinput3.text == "" or self.textinput4.text == ""):
-            self.label5.opacity = 1
-            self.btn.opacity = 1
-            self.label5.text = 'Preencha todos os campos'
-        else:
-            self.label5.text = self.reservas.adicionar_reserva(self.textinput2.text,self.textinput3.text,self.textinput4.text)
-            self.textinput2.text = ""
-            self.textinput3.text = ""
-            self.textinput4.text = ""
-            
-    def listar(self):
+    def limpar_widget(self):
+        self.lista.opacity = 0  
         self.label2.opacity = 0
         self.label3.opacity = 0
         self.label4.opacity = 0
@@ -55,9 +33,44 @@ class Painel(FloatLayout):
         self.textinput4.opacity = 0 
         self.label5.opacity = 0
         self.btn.opacity = 0
+        self.btn2.opacity = 0
 
+    def adicionar(self):
+        self.limpar_widget()
+        self.label2.opacity = 1
+        self.label3.opacity = 1
+        self.label4.opacity = 1
+        self.textinput2.opacity = 1
+        self.textinput3.opacity = 1
+        self.textinput4.opacity = 1  
+        self.label5.opacity = 1
+        self.btn.opacity = 1 
+        self.label5.text = 'Preencha todos os campos' 
+
+    def enviar(self):
+        print('teste')
+        if (self.textinput2.text == "" or self.textinput3.text == "" or self.textinput4.text == ""):
+            self.label5.text = 'Preencha todos os campos'
+        else:
+            self.label5.text = self.reservas.adicionar_reserva(self.textinput2.text,self.textinput3.text,self.textinput4.text)
+            self.textinput2.text = ""
+            self.textinput3.text = ""
+            self.textinput4.text = ""
+
+    def listar(self):
+        self.limpar_widget() 
         self.lista.opacity = 1
         self.lista.text = self.reservas.listar_reservas()
+    
+    def deletar(self):
+        self.limpar_widget() 
+        self.btn2.opacity = 1
+
+    def excluir(self):
+        pass
+
+    def atualizar(self):
+        pass
 
 class painelApp(App):
     def build(self):
