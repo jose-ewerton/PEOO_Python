@@ -17,7 +17,7 @@ class Painel(FloatLayout):
     textinput3 = ObjectProperty(None)
     textinput4 = ObjectProperty(None)
 
-    btn = ObjectProperty(None)
+    btn1 = ObjectProperty(None)
     btn2 = ObjectProperty(None)
     lista = ObjectProperty(None)
 
@@ -32,7 +32,7 @@ class Painel(FloatLayout):
         self.textinput3.opacity = 0
         self.textinput4.opacity = 0 
         self.label5.opacity = 0
-        self.btn.opacity = 0
+        self.btn1.opacity = 0
         self.btn2.opacity = 0
 
     def adicionar(self):
@@ -44,7 +44,7 @@ class Painel(FloatLayout):
         self.textinput3.opacity = 1
         self.textinput4.opacity = 1  
         self.label5.opacity = 1
-        self.btn.opacity = 1 
+        self.btn1.opacity = 1 
         self.label5.text = 'Preencha todos os campos' 
 
     def enviar(self):
@@ -70,7 +70,7 @@ class Painel(FloatLayout):
         pass
 
     def atualizar(self):
-        pass
+        self.limpar_widget() 
 
 class painelApp(App):
     def build(self):
