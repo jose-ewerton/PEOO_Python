@@ -10,11 +10,18 @@ class Reserva:
         self.chave += 1
         #verificar s eo horario está disponivel naquele dia
         self.lista_reservas.append(Reserva(self.chave,dia,horario,valor))
+        print(self.chave,dia,horario,valor)
         return f'Reserva realizada com sucesso! Guarde sua chave de acesso {self.chave}'
 
     def listar_reservas(self):
-        for item in self.lista_reservas:
-            print(item.chave,item.dia,item.horario,item.valor)
+        if len(self.lista_reservas) != 0:
+            texto = ""
+            for item in self.lista_reservas:
+                print(item.chave,item.dia,item.horario,item.valor)
+                texto += f' Chave: {item.chave}, Dia: {item.dia}, Horario: {item.horario}, Valor: {item.valor}\n'
+            return texto 
+        else:
+            return 'Lista de reservas vazia!'
 
     def deletar_reserva(self,cod):
         cond = 0
