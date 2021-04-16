@@ -15,7 +15,6 @@
     textinput4:textinput4
 
     btn1:btn1
-    btn2:btn2
     lista:lista
 
     FloatLayout:
@@ -112,9 +111,9 @@
         Button:
             id:btn1
             background_color: [0/255, 126/255, 12/255,1]
-            text:'Enviar'
+            text:''
             opacity:0
-            on_press: root.enviar()
+            on_press: root.executar_tarefa()
             font_size: 15 
             size_hint:(.2, .05)
             pos_hint:{'x':.7, 'y':.3}
@@ -125,13 +124,4 @@
             font_size: 15 
             size_hint:(.1, .1)
             pos_hint:{'x':.6, 'y':.8}
-        Button:
-            id:btn2
-            background_color: [0/255, 126/255, 12/255,1]
-            text: 'Excluir'
-            opacity: 0
-            on_press: root.excluir()
-            font_size: 15 
-            size_hint:(.2, .05)
-            pos_hint:{'x':.7, 'y':.3}
 

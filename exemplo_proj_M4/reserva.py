@@ -26,12 +26,13 @@ class Reserva:
     def deletar_reserva(self,cod):
         cond = 0
         for reserva in self.lista_reservas:
-            if (cod == reserva.chave):
+            if (int(cod) == reserva.chave):
                 cond = 1
-                print ( f'Removendo a reserva {reserva.chave}, {reserva.dia}, {reserva.horario}, {reserva.valor}')
+                texto = f'Removendo a reserva {reserva.chave}, {reserva.dia}, {reserva.horario}, {reserva.valor}'
                 self.lista_reservas.remove(reserva)
+                return texto
         if  not cond:
-            print( 'Reserva não existe!')
+            return f'Reserva {cod} não existe!'
     
     def atualizar_reserva(self,**kwargs):
         cod = 0
