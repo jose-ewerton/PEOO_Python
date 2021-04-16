@@ -34,13 +34,22 @@ class Reserva:
         if  not cond:
             return f'Reserva {cod} não existe!'
     
+    def retornar_reserva(self,cod):
+        res = 0
+        for item in self.lista_reservas:
+            if (int(cod) == item.chave):
+                res = item
+        if res == 0:
+            return 'Não existe a chave'
+        else:
+            return res
+
     def atualizar_reserva(self,**kwargs):
         cod = 0
         for variavel,atributo in kwargs.items():
             if (variavel == 'chave'):
                 cod = int(atributo)
                 break
-        print(f'Código encontrado: {cod}')
         for item in self.lista_reservas:
             if (item.chave == cod):
                 for variavel,atributo in kwargs.items():
@@ -50,9 +59,9 @@ class Reserva:
                         item.horario = atributo 
                     if (variavel == 'valor'):
                         item.valor = atributo
-                #print(item.chave, item.dia,item.horario,item.valor)
                 self.lista_reservas.insert(item.chave,item)
                 self.lista_reservas.remove(item)
+                return f'Atualizados os dados de chave {item.chave}'
            
 if (__name__ == '__main__'):
     r = Reserva()
@@ -64,7 +73,7 @@ if (__name__ == '__main__'):
     r.listar_reservas()
     r.atualizar_reserva(chave = 2,dia = 'Segunda',horario = '19:00', valor = 'R$ 60,00')
     r.listar_reservas()
-    r.atualizar_reserva(chave = 1,dia = 'Terça',horario = '19:00', valor = 'R$ 60,00')
+    r.atualizar_reserva(chave = 9,dia = 'Terça',horario = '19:00', valor = 'R$ 60,00')
     r.listar_reservas()
     #r.listar_reservas()
 

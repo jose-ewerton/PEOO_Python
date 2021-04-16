@@ -88,14 +88,33 @@ class Painel(FloatLayout):
         elif (self.confirm == 2):
             if (self.textinput1.text == ""):
                 self.label5.opacity = 1
-                self.label5.text = 'Preencha todos os campos'
+                self.label5.text = 'Preencha o campo com a chave que deseja deletar'
             else:
                 print('teste deletar')
                 self.label5.text = self.reservas.deletar_reserva(self.textinput1.text)
                 self.label5.opacity = 1
                 self.textinput1.text = ""
         elif (self.confirm == 3):
-            print('teste atualizar')
+            if (self.textinput1.text == ""):
+                self.label5.opacity = 1
+                self.label5.text = 'Preencha o campo com a chave que deseja atualizar'
+            else:
+                print('teste atualizar')
+                r = self.reservas.retornar_reserva(self.textinput1.text)
+                if (type(r) == str):
+                    self.label5.text = "Chave não encontrada! Tente novamente"
+                else:
+                    self.label2.opacity = 1
+                    self.label3.opacity = 1
+                    self.label4.opacity = 1
+                    self.textinput2.opacity = 1
+                    self.textinput3.opacity = 1
+                    self.textinput4.opacity = 1 
+                    self.textinput2.text = r.dia
+                    self.textinput3.text = r.horario
+                    self.textinput4.text = r.valor
+                    self.label5.text = self.reservas.atualizar_reserva(chave = self.textinput1.text, dia = self.textinput2.text, horario = self.textinput3.text, valor = self.textinput4.text)
+
 
 class painelApp(App):
     def build(self):
