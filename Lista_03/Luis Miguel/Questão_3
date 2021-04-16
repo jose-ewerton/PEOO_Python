@@ -13,11 +13,11 @@ def conversor(hora, minuto):
     minuto = int(input("forneça os minutos: "))
     if 12 <= hora <= 23:
         hora = (hora - 12)
-        print("hora convertida: ", hora, minuto)
-        hora = "pm"
+        print(f"{hora}h e {minuto}min")
+        
     else:
         print("valor am")
-        hora = "pm"
+        
 def saida():
     c = 0
     while c < 1:
