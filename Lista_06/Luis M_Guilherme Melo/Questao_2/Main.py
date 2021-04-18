@@ -1,5 +1,5 @@
 
-from Revista import Revista
+from Revista import Revista, Edicao
 
 
 revista1 = Revista(15, "Jueline na cozinha", "adulta", "playboy")
