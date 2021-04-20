@@ -51,7 +51,7 @@ E MAIS 25% PELA INTERFACE CORRETA)
 N1 = L1,L2
 N2 = L3,L4
 N3 = L5,L6
-N4 = Projeto 
+N4 = Projeto (50% rodando no terminal, 50% a interface)
 
 
 Arthur, Felipe Damião e Diogo - (1)

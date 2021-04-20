@@ -10,29 +10,46 @@ class Reserva:
         self.chave += 1
         #verificar s eo horario está disponivel naquele dia
         self.lista_reservas.append(Reserva(self.chave,dia,horario,valor))
+        print(self.chave,dia,horario,valor)
         return f'Reserva realizada com sucesso! Guarde sua chave de acesso {self.chave}'
 
     def listar_reservas(self):
-        for item in self.lista_reservas:
-            print(item.chave,item.dia,item.horario,item.valor)
+        if len(self.lista_reservas) != 0:
+            texto = ""
+            for item in self.lista_reservas:
+                print(item.chave,item.dia,item.horario,item.valor)
+                texto += f' Chave: {item.chave}, Dia: {item.dia}, Horario: {item.horario}, Valor: {item.valor}\n'
+            return texto 
+        else:
+            return 'Lista de reservas vazia!'
 
     def deletar_reserva(self,cod):
         cond = 0
         for reserva in self.lista_reservas:
-            if (cod == reserva.chave):
+            if (int(cod) == reserva.chave):
                 cond = 1
-                print ( f'Removendo a reserva {reserva.chave}, {reserva.dia}, {reserva.horario}, {reserva.valor}')
+                texto = f'Removendo a reserva {reserva.chave}, {reserva.dia}, {reserva.horario}, {reserva.valor}'
                 self.lista_reservas.remove(reserva)
+                return texto
         if  not cond:
-            print( 'Reserva não existe!')
+            return f'Reserva {cod} não existe!'
     
+    def retornar_reserva(self,cod):
+        res = 0
+        for item in self.lista_reservas:
+            if (int(cod) == item.chave):
+                res = item
+        if res == 0:
+            return 'Não existe a chave'
+        else:
+            return res
+
     def atualizar_reserva(self,**kwargs):
         cod = 0
         for variavel,atributo in kwargs.items():
             if (variavel == 'chave'):
                 cod = int(atributo)
                 break
-        print(f'Código encontrado: {cod}')
         for item in self.lista_reservas:
             if (item.chave == cod):
                 for variavel,atributo in kwargs.items():
@@ -42,9 +59,9 @@ class Reserva:
                         item.horario = atributo 
                     if (variavel == 'valor'):
                         item.valor = atributo
-                #print(item.chave, item.dia,item.horario,item.valor)
                 self.lista_reservas.insert(item.chave,item)
                 self.lista_reservas.remove(item)
+                return f'Atualizados os dados de chave {item.chave}'
            
 if (__name__ == '__main__'):
     r = Reserva()
@@ -56,7 +73,7 @@ if (__name__ == '__main__'):
     r.listar_reservas()
     r.atualizar_reserva(chave = 2,dia = 'Segunda',horario = '19:00', valor = 'R$ 60,00')
     r.listar_reservas()
-    r.atualizar_reserva(chave = 1,dia = 'Terça',horario = '19:00', valor = 'R$ 60,00')
+    r.atualizar_reserva(chave = 9,dia = 'Terça',horario = '19:00', valor = 'R$ 60,00')
     r.listar_reservas()
     #r.listar_reservas()
 

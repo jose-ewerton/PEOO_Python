@@ -4,7 +4,7 @@ b. A quantidade de pessoas que responderam regular;
 c. A porcentagem de pessoas que responderam bom entre todos os espectadoresanalisados.''' 
 
 idade = []
-opniao = []
+nota = []
 i= 0 
 while i < 15:
 	print("Para sua opinião use 3 para ótimo, 2 para bom e 1 para regular.")
