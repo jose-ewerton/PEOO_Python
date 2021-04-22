@@ -15,7 +15,6 @@ class Painel(FloatLayout):
     textinput2 = ObjectProperty(None)
     textinput3 = ObjectProperty(None)
     textinput4 = ObjectProperty(None)
-
     btn1 = ObjectProperty(None)
     lista = ObjectProperty(None)
 
