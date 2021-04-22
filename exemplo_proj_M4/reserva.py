@@ -40,7 +40,7 @@ class Reserva:
             if (int(cod) == item.chave):
                 res = item
         if res == 0:
-            return 'Não existe a chave'
+            return "Chave não encontrada"
         else:
             return res
 
@@ -50,11 +50,14 @@ class Reserva:
             if (variavel == 'chave'):
                 cod = int(atributo)
                 break
+
         for item in self.lista_reservas:
             if (item.chave == cod):
                 for variavel,atributo in kwargs.items():
                     if (variavel == 'dia'):
                         item.dia = atributo 
+                        for variavel,atributo in kwargs.items():
+                            print("Print aqui",variavel,atributo)
                     if (variavel == 'horario'):
                         item.horario = atributo 
                     if (variavel == 'valor'):
