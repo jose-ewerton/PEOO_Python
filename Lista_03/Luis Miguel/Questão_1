@@ -3,13 +3,14 @@ Faça um programa, cum uma função que necessite de um número variável de arg
 nomeados e forneça a soma e quantidade de argumentos informados.
 """
 
-def Numero(A):
-    A = []
-    i = 0
-    while 0 < 1:
-        A.append(float(input("forneça argumentos: ")))
-        print("quantidade de argumentos: ", len(A))
-        print("valor da soma dos argumentos: ", sum(A))
+
+def Numero(*args):
+    lista = []
+    for valores in args:
+    	lista.append(valores)
+    	print(f"{valores} inserido")
+    	print("quantidade de argumentos: ", len(lista))
+    	print("valor da soma dos argumentos: ", sum(lista))
 
 
-Numero(1)
+Numero(18, 18, 19, 20)

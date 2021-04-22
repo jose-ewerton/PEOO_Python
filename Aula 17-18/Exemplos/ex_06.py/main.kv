@@ -1,0 +1,19 @@
+#:kivy 2.0.0
+<MyBoxLayout>:
+    orientation:'vertical'
+    BoxLayout:
+        Label:
+            text: 'User'
+            font_size: 50
+        TextInput:
+            font_size: 50
+    BoxLayout:
+        Label:
+            text: 'Password'
+            font_size: 50
+        TextInput:
+            password: True
+            font_size: 50
+    Button:
+        text:'Enviar'
+        color: 'blue'

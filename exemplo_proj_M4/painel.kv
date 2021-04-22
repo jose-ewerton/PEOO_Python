@@ -1,0 +1,126 @@
+#:kivy 2.0.0
+
+<Painel>:
+    layout:layout
+    label1:label1
+    label2:label2
+    label3:label3
+    label4:label4
+    label5:label5
+
+    textinput1:textinput1
+    textinput2:textinput2
+    textinput3:textinput3
+    textinput4:textinput4
+
+    btn1:btn1
+    lista:lista
+
+    FloatLayout:
+        id:layout
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text:'Inserir'
+            on_press:root.inserir()
+            font_size:20 
+            size_hint:(.3, .1)
+            pos_hint:{'x':.05, 'y':.85}
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text: 'Atualizar'
+            on_press: root.atualizar()
+            font_size: 20 
+            size_hint:(.3, .1)
+            pos_hint:{'x':.05, 'y':.70}
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text: 'Listar'
+            on_press: root.listar()
+            font_size: 20 
+            size_hint:(.3, .1)
+            pos_hint:{'x':.05, 'y':.55}
+        Button:
+            background_color: [151/255, 133/255, 204/255,1]
+            text: 'Deletar'
+            on_press: root.deletar()
+            font_size: 20 
+            size_hint:(.3, .1)
+            pos_hint:{'x':.05, 'y':.40}
+
+        Label:
+            id:label1
+            opacity:0
+            text: 'Chave'
+            font_size: 20 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.8}
+        TextInput:
+            id:textinput1
+            opacity:0
+            font_size: 15 
+            size_hint:(.3, .05)
+            pos_hint:{'x':.6, 'y':.78}
+        Label:
+            id:label2
+            opacity:0
+            text: 'Dia'
+            font_size: 20 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.7}
+        TextInput:
+            id:textinput2
+            opacity:0
+            font_size: 15 
+            size_hint:(.3, .05)
+            pos_hint:{'x':.6, 'y':.68}
+        Label:
+            id:label3
+            opacity:0
+            text: 'Horario'
+            font_size: 20 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.6}
+        TextInput:
+            id:textinput3
+            opacity:0
+            font_size: 15 
+            size_hint:(.3, .05) #x,y
+            pos_hint:{'x':.6, 'y':.58}
+        Label:
+            id:label4
+            opacity:0
+            text: 'Valor'
+            font_size: 20 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.5}
+        TextInput:
+            id:textinput4
+            opacity:0
+            font_size: 15 
+            size_hint:(.3, .05)
+            pos_hint:{'x':.6, 'y':.48}
+        Label:
+            id:label5
+            opacity:0
+            color: 'red'
+            text: ''
+            font_size: 12 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.65, 'y':.4}
+        Button:
+            id:btn1
+            background_color: [0/255, 126/255, 12/255,1]
+            text:''
+            opacity:0
+            on_press: root.executar_tarefa()
+            font_size: 15 
+            size_hint:(.2, .05)
+            pos_hint:{'x':.7, 'y':.3}
+        Label:
+            id:lista
+            opacity:0
+            text: ''
+            font_size: 15 
+            size_hint:(.1, .1)
+            pos_hint:{'x':.6, 'y':.8}
+

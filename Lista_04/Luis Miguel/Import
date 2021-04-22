@@ -1,0 +1,10 @@
+import funcoes4
+
+s = soma(420, 69, 17)
+print(s)
+a = acrescimo(20)
+print(a)
+c = conca("luis", "eh", "muito", "maxo")
+print(c)
+d = dicionario(luis = "jojofag", presida = "jojohater"
+print(d)

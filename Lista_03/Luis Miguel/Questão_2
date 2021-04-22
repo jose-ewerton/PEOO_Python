@@ -4,8 +4,13 @@ formado.
 """
 
 
+
 def numero(a):
-    print(len(a))
+    b = str(a)
+    print(len(b))
+ 
+
+numero(20)
 
 
 #pedindo a entrada em str permite contar os caracteres facilmente 
