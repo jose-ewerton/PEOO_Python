@@ -58,6 +58,15 @@ Arthur, Felipe Damião e Diogo - (1)
 Luis Miguel, Guilherme Melo, Guilherme Ferreira - (4)
 Pedro Lucas, Felipe Victor, Evandro (1)
 Clara Lima, Iuri Souza, Maria Clara (2)
+Maria Luiza, Bianca Jennifer, Marilia Gabriela, José Diego (2)
+	Usaram PySimpleGUI
+	Se preocuparam com adicões iguais;
+	Parece muito um sistema funcional, massa
+	Me falem sobre esse módulo
+	Atualizar só funciona com nomes que já existem
+	Nota 10!
+
+Ian Guilherme, Jessica Natalia, Natasha Rodrigues (2)
 
 Até 30/04 - Aguardando projetos e listas e fechando notas NORMAL
 Entre 01/05 e 05/05 - Aguardando projetos e listas e fechando notas RECUPERAÇÂO
