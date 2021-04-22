@@ -9,7 +9,7 @@ pm = []#peso dos maxo
 pf = []#peso das femeas
 p = 0
 
-while p < 15:
+while p < 16:
   """
   forneca o sexo da pessoa como M = masculino e F = feminino
   a altura como float, ex: 1.87, 1.65

@@ -1,0 +1,96 @@
+'''
+Defina os atributos e métodos das seguintes classes:
+Animal:
+'''
+
+
+class Animal:
+
+    def __init__(self, Nome, especie, tamanho, NP, peso, cond):
+
+        self.Nome = Nome
+        self.especie = especie
+        self.tamanho = tamanho
+        self.NP = NP  #Nivel_de_perigo
+        self.peso = peso
+        self.cond = cond  #condição_atual
+
+    def status_base(self):
+
+        a = Animal
+
+        a.nome = input("Digite o nome desse animal:")
+        a.espc = input("Digite a especie desse animal:")
+        a.tam = float(input("Digite o tamanho desse animal em metros:"))
+        a.peso = float(input("Digite o peso desse animal quilogramas:"))
+
+        print('\033[1;97m')
+        print("Nome do animal:", a.nome)
+        print("Espécie:", a.espc)
+        print("Tamanho atual:", a.tam, "M")
+        print("Peso atual:", a.peso, "KG")
+        print('\033[0;0m')
+
+    def bonus(self):
+
+        a = Animal
+        print("De 0 a 10, sendo 0 inofensivo e 10 extremamente letal.")
+        a.NP = int(input("Digite o nivel de perigo do animal:"))
+
+        print("De 0 a 10, sendo 0 condições precarias e 10 em perfeita saúde.")
+        a.cond = int(input("Digite a condição atual do animal:"))
+
+        if 0 >= a.NP and a.NP < 4:
+            print('\033[1;32m')
+            print("Ele é calmo, não precisa se preocupar.")
+
+        elif 4 >= a.NP and a.NP < 6:
+            print('\033[1;93m')
+            print("Apesar de parecer calmo, tome o minimo de cuidado.")
+
+        elif 6 >= a.NP and a.NP < 8:
+            print('\033[1;33m')
+            print("Tome cuidado com atitudes suspeitas dele.")
+
+        elif 8 >= a.NP and a.NP <= 9:
+            print('\033[1;91m')
+            print("Fique em alerta constante e chame alguma autoridade competente.")
+
+        elif a.NP == 10:
+            print('\033[1;31m')
+            print("Fique totalmente atento aos movimentos dele e ligue urgentemente para algum orgão competente.")
+
+        if 0 >= a.cond <= 3:
+            print('\033[1;31m')
+            print("Entre em contato urgente com algum orgão para cuidar desse animal.")
+            print('\033[0;0m')
+
+        elif 3 > a.cond <= 5:
+            print('\033[1;91m')
+            print("Ele pode aparentar ter ferimentos que podem ser tratados com cuidados basicos")
+            print('\033[0;0m')
+
+        elif 6 >= a.cond <= 9:
+            print('\033[1;93m')
+            print(
+                "Ele apresenta apenas pequenos cortes ou esfoliações superficiais, caso seja algum animal perigoso, não irá necessitar de tratamento.")
+            print('\033[0;0m')
+
+        elif a.cond == 10:
+            print('\033[1;32m')
+            print("Ele está totalmente saudavel e nao apresenta nenhuma lesão.")
+            print('\033[0;0m')
+
+        if a.NP == 10 and a.cond == 0:
+            print('\033[7;31m')
+            print("Porque você matou esse animal?")
+            print('\033[0;0m')
+
+
+Animal.status_base(1)
+Animal.bonus(1)
+
+print('')
+print('==================================================')
+print('')
+print('By: Vinicius Barbosa')
