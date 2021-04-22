@@ -1,0 +1,68 @@
+#:kivy 2.0.0
+<animal>:
+    textinput1: textinput1
+    textinput2: textinput2
+    textinput3: textinput3
+    textinput4: textinput4
+    textinput5: textinput5
+    textinput6: textinput6
+    btn1: btn1
+    
+
+
+    BoxLayout:
+    	orientation: 'vertical'
+    	Label:
+    		text: 'insira o nome do animal'
+    	TextInput:
+            id: textinput1
+            text: ''
+    		
+    	Label:
+    		text : 'insira a categoria do animal'
+    	TextInput:
+            id: textinput2
+            text: ''
+    		
+    	Label:
+    		text: 'insira a alimentação do animal'
+    	TextInput:
+            id: textinput3
+    		text: ''
+
+    	Label:
+    		text: 'insira o id do animal'
+    	TextInput:
+    	    id: textinput4
+            text: ''
+        
+        Label:
+            text: 'Insira o sexo do animal'
+        TextInput:
+            id: textinput5
+            text: ''
+        
+        Label:
+            text: 'Insira o peso do animal'
+        TextInput:
+            id: textinput6
+            text: ''
+        
+    
+
+    	BoxLayout:
+            id: btn1
+    		Button:
+    			text: 'adicionar'
+    		    on_press: root.adicionar()
+    		Button:
+    			text: 'listar'
+                on_press: root.listar()
+            Button:
+                text: 'apagar tudo'
+                on_press: root.deletar()
+        
+    		
+    		
+    	
+    
