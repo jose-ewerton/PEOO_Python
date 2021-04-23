@@ -1,0 +1,128 @@
+<Projeto>:
+	layout:layout
+	lnome:lnome
+	lvalor:lvalor
+	lcod:lcod
+	lchave:lchave
+	ltitulo:ltitulo
+	llista:llista
+	
+	blistar:blistar
+	badicionar:badicionar
+	batualizar:batualizar
+	bremove:bremove
+	
+	txtnome:txtnome
+	txtvalor:txtvalor
+	txtcod:txtcod
+	txtchave:txtchave
+	
+	FloatLayout:
+		id: layout
+		
+		#Labels
+		Label:
+			text:'Lista de Produtos'
+			font_size:50
+			size_hint:(.3,.08)
+			pos_hint:{'x':.33,'y':.9}
+		Label:
+			id:lnome
+			text:'Nome:'
+			font_size:30
+			size_hint:(.1,.08)
+			pos_hint:{'x':.1,'y':.70}
+		Label:
+			id:lvalor
+			text:'Valor:'
+			font_size:30
+			size_hint:(.1,.08)
+			pos_hint:{'x':.1,'y':.55}
+		Label:
+			id:lcod
+			text:'Codigo:'
+			font_size:30
+			size_hint:(.1,.08)
+			pos_hint:{'x':.1,'y':.40}
+		Label:
+			id:lchave
+			text:'Chave para atualizar/excluir:'
+			font_size:27
+			size_hint:(.1,.08)
+			pos_hint:{'x':.2,'y':.25}
+		Label:
+			id:ltitulo
+			text:'Lista Atual:'
+			font_size:45
+			size_hint:(.1,.08)
+			pos_hint:{'x':.66,'y':.84}
+		Label:
+			id:llista
+			text:''
+			font_size:30
+			size_hint:(.43,.63)
+			pos_hint:{'x':.5,'y':.25}
+			
+		
+		#Buttons
+		#Button para mostrar a lista de produtos	
+		Button:
+			id:blistar
+			background_color: [75/255, 000/255, 130/255,1]
+			text: 'Listar'
+			font_size: 35 
+			size_hint:(.3, .05)
+			pos_hint:{'x':.03, 'y':.80}
+			on_press:root.listar()
+		#Button para adicionar os produtos
+		Button:
+			id:badicionar
+			background_color: [127/255, 255/255, 000/255,1]
+			text: 'Adicionar'
+			font_size: 35 
+			size_hint:(.3, .08)
+			pos_hint:{'x':.01, 'y':.01}
+			on_press:root.add()
+		#Button para remover produtos
+		Button:
+			id:bremove
+			background_color: [255/255, 000/255, 000/255,1]
+			text: 'Remover'
+			font_size: 35 
+			size_hint:(.3, .08)
+			pos_hint:{'x':.35, 'y':.01}
+			on_press:root.remove()
+		#Button para atualizar produtos a partir de uma chave(id)
+		Button:
+			id:batualizar
+			background_color: [240/255, 255/255, 255/255,1]
+			text: 'Atualizar'
+			font_size: 35 
+			size_hint:(.3, .08)
+			pos_hint:{'x':.7, 'y':.01}
+			on_press:root.atualizar()
+			
+		#Entrada do nome
+		TextInput:
+			id:txtnome
+			font_size: 35
+			size_hint:(.3, .08)
+			pos_hint:{'x':.03, 'y':.62}
+		#Entrada do valor
+		TextInput:
+			id:txtvalor
+			font_size: 35 
+			size_hint:(.3, .08)
+			pos_hint:{'x':.03, 'y':.47}
+		#Entrada do id
+		TextInput:
+			id:txtcod
+			font_size: 35 
+			size_hint:(.3, .08)
+			pos_hint:{'x':.03, 'y':.33}
+		#Entrada da chave(id)
+		TextInput:
+			id:txtchave
+			font_size: 35 
+			size_hint:(.3, .08)
+			pos_hint:{'x':.03, 'y':.19}
