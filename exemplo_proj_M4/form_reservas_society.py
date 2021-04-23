@@ -3,7 +3,7 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.label import Label
 from reserva import Reserva
 from kivy.properties import ObjectProperty
-
+#um teste
 class Painel(FloatLayout):  
     layout = ObjectProperty(None)        
     label1 = ObjectProperty(None)
