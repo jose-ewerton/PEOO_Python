@@ -3,7 +3,7 @@ from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.label import Label
 from reserva import Reserva
 from kivy.properties import ObjectProperty
-
+#um teste
 class Painel(FloatLayout):  
     layout = ObjectProperty(None)        
     label1 = ObjectProperty(None)
@@ -15,7 +15,6 @@ class Painel(FloatLayout):
     textinput2 = ObjectProperty(None)
     textinput3 = ObjectProperty(None)
     textinput4 = ObjectProperty(None)
-
     btn1 = ObjectProperty(None)
     lista = ObjectProperty(None)
 
@@ -94,14 +93,13 @@ class Painel(FloatLayout):
                 self.label5.opacity = 1
                 self.textinput1.text = ""
         elif (self.confirm == 3):
+            self.label5.opacity = 1
             if (self.textinput1.text == ""):
-                self.label5.opacity = 1
-                self.label5.text = 'Preencha o campo com a chave que deseja atualizar'
-            else:
-                print('teste atualizar')
+                self.label5.text = 'Preencha o campo com a chave correta que deseja atualizar' 
+            else:         
                 r = self.reservas.retornar_reserva(self.textinput1.text)
                 if (type(r) == str):
-                    self.label5.text = "Chave não encontrada! Tente novamente"
+                    self.label5.text = r
                 else:
                     self.label2.opacity = 1
                     self.label3.opacity = 1
@@ -109,10 +107,12 @@ class Painel(FloatLayout):
                     self.textinput2.opacity = 1
                     self.textinput3.opacity = 1
                     self.textinput4.opacity = 1 
+                    '''
                     self.textinput2.text = r.dia
                     self.textinput3.text = r.horario
                     self.textinput4.text = r.valor
-                    self.label5.text = self.reservas.atualizar_reserva(chave = self.textinput1.text, dia = self.textinput2.text, horario = self.textinput3.text, valor = self.textinput4.text)
+                    '''
+                    self.label5.text = self.reservas.atualizar_reserva(chave = self.textinput1.text, dia = self.textinput2.text, horario = self.textinput3.text , valor = self.textinput4.text)
 
 
 class painelApp(App):
