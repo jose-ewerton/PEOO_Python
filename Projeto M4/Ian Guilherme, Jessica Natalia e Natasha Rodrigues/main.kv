@@ -1,0 +1,273 @@
+#:kivy 2.0.0
+
+<MeuApp>:
+
+    lbnome:lbnome
+    lbdia:lbdia
+    lbhora:lbhora
+    lbtipo:lbtipo
+    lbmedico:lbmedico
+    lbpreencher:lbpreencher
+    lbmdisp:lbmdisp
+    lbian:lbian
+    lbjess:lbjess
+    lbnat:lbnat
+    lbchave:lbchave 
+    lblista:lblista
+    lblista1:lblista1
+    lblista2:lblista2
+    lblistanome:lblistanome
+    lbconsultas:lbconsultas
+
+    tinome:tinome
+    tidia:tidia
+    tihora:tihora
+    titipo:titipo
+    timedico:timedico
+    tichave:tichave
+
+    btenviar:btenviar
+
+    FloatLayout:
+        canvas.before:
+            Color:
+                rgb: [119/255, 136/255, 153/255]
+            Rectangle:
+                pos: self.pos
+                size: self.size
+    
+        Label:
+            font_size:30
+            text: "Clínica de odontologia Jin"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.3, 'y':.86}
+
+        Label:
+            font_size: 20
+            text: "Formulário de cosultas"
+            color: 'darkblue'
+            size_hint: (.2, .1)
+            pos_hint: {'x':.3, 'y':.80}
+
+        Button:
+            text: 'Nova consulta'
+            on_press: root.nova()
+            size_hint: (.375, .125)
+            pos_hint: {'x':.075, 'y':.185}
+            background_color: [0/255,0/255,205/255]
+
+        Button:
+            text: 'Atualizar consulta'
+            on_press: root.atualizar()
+            size_hint: (.375, .125)
+            pos_hint: {'x':.55, 'y':.185}
+            background_color: [0/255,0/255,205/255]
+
+        Button:
+            text: 'Deletar consulta'
+            on_press: root.deletar()
+            size_hint: (.375, .125)
+            pos_hint: {'x':.075, 'y':.04}
+            background_color: [0/255,0/255,205/255]
+
+        Button:
+            text: 'Listar consultas'
+            on_press: root.listar()
+            size_hint: (.375, .0625)
+            pos_hint: {'x':.55, 'y':.1}
+            background_color: [0/255,0/255,205/255]
+
+        Button:
+            text: 'Tipos de consultas'
+            on_press: root.tipos()
+            size_hint: (.375, .0625)
+            pos_hint: {'x':.55, 'y':.04}
+            background_color: [0/255,0/255,205/255]
+
+        AsyncImage:
+            source: 'https://i.ibb.co/ZNkRXZ4/ezgif-com-gif-maker-1.png'
+            size_hint: 1, .2
+            pos_hint: {'center_x':.85, 'center_y': .87} 
+
+        Label:
+            id: lbnome
+            opacity:0
+            font_size: 15
+            text: "Insira seu nome completo:"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.088, 'y':.665}
+
+        TextInput:
+            id:tinome
+            opacity:0
+            font_size: 15 
+            size_hint:(.375, .05)
+            pos_hint:{'x':.075, 'y':.635}
+
+        Label:
+            id:lbdia
+            opacity:0
+            font_size: 15
+            text: "Insira o dia da consulta: "
+            size_hint: (.2, .1)
+            pos_hint: {'x':.078, 'y':.565}
+
+        TextInput:
+            id:tidia
+            opacity:0
+            font_size: 15 
+            size_hint:(.375, .05)
+            pos_hint:{'x':.075, 'y':.535}
+
+        Label:
+            id:lbhora
+            opacity:0
+            font_size: 15
+            text: "Insira o horário da consulta:"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.093, 'y':.465}
+
+        TextInput:
+            id:tihora
+            opacity:0
+            font_size: 15 
+            size_hint:(.375, .05)
+            pos_hint:{'x':.075, 'y':.435}
+
+        Label:
+            id:lbtipo
+            opacity:0
+            font_size: 15
+            text: "Insira o tipo da cosulta:"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.55, 'y':.665}
+
+        TextInput:
+            id:titipo
+            opacity:0
+            font_size: 15 
+            size_hint:(.375, .05)
+            pos_hint:{'x':.55, 'y':.635}
+
+        Label:
+            id:lbmedico
+            opacity:0
+            font_size: 15
+            text: "Nome do médico(a) que deseja:"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.585, 'y':.565}
+
+        TextInput:
+            id:timedico
+            opacity:0
+            font_size: 15 
+            size_hint:(.375, .05)
+            pos_hint:{'x':.55, 'y':.535}
+
+        Button:
+            id:btenviar
+            opacity: 0
+            on_press: root.enviar()
+            text: ''
+            background_color: [0/255,255/255,0/255]
+            size_hint: (.2, .05)
+            pos_hint: {'x':.4, 'y':.33}
+
+        Label:
+            id:lbpreencher
+            opacity: 0
+            font_size:13
+            text: ''
+            color: 'red'
+            size_hint: (.2, .1)
+            pos_hint: {'x':.4, 'y':.353}
+
+        Label:
+            id:lbmdisp
+            opacity:0
+            font_size: 15
+            text: "Os médicos disponíveis são:"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.57, 'y':.465}
+
+        Label:
+            id:lbian
+            opacity:0
+            font_size: 15
+            text: " Ian"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.5, 'y':.41}
+
+        Label:
+            id:lbjess
+            opacity:0
+            font_size: 15
+            text: "Jessica"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.62, 'y':.41}
+
+        Label:
+            id:lbnat
+            opacity:0
+            font_size: 15
+            text: "Natasha"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.75, 'y':.41}
+
+        Label:
+            id:lbchave
+            opacity:0
+            font_size: 15
+            text: "Insira a chave:"
+            size_hint: (.2, .1)
+            pos_hint: {'x':.76, 'y':.62}
+
+        TextInput:
+            id:tichave
+            opacity:0
+            font_size: 15 
+            size_hint:(.13, .05)
+            pos_hint:{'x':.793, 'y':.585}
+
+        Label:
+            id:lblista
+            opacity:0
+            font_size: 15
+            text: ""
+            size_hint: (.2, .1)
+            color: 'darkblue'
+            pos_hint: {'x':.4, 'y':.665}
+
+        Label:
+            id:lblista1
+            opacity:0
+            font_size: 16
+            text: ""
+            size_hint: (.2, .1)
+            pos_hint: {'x':.18, 'y':.55}
+
+        Label:
+            id:lblista2
+            opacity:0
+            font_size: 16
+            text: ""
+            size_hint: (.2, .1)
+            pos_hint: {'x':.63, 'y':.55}
+
+        Label:
+            id:lblistanome
+            opacity:0
+            font_size: 17
+            text: "Olá querido cliente, os tipos de consultas que temos disponíveis são:"
+            size_hint: (.2, .1)
+            color: 'darkblue'
+            pos_hint: {'x':.38, 'y':.7}
+
+        Label:
+            id:lbconsultas
+            opacity:0
+            font_size: 15
+            text: ""
+            size_hint: (.2, .1)
+            color: 'darkblue'
+            pos_hint: {'x':.3, 'y':.6}
