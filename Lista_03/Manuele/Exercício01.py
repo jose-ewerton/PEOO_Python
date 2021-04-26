@@ -7,7 +7,7 @@ def soma(*ls):
     s = s + n
   print("A soma dos {} é {}".format(ls,s))
 
-soma(15, 110, 80)
+soma(1, 1, 1)
 soma(12, 46, 49, 9)
 
 

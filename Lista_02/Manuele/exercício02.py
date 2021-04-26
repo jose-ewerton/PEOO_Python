@@ -28,4 +28,4 @@ print("=-"*30)
 print("Atleta: {}".format(atleta))
 print(f"Media dos demais saltos: {media:.2f}")
 print("Resultado final: ")
-print(f"{atleta}: {media:.2f}"
+print(f"{atleta}: {media:.2f}")

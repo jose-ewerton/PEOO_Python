@@ -6,7 +6,7 @@ print('='*50)
 #Receber 10 numeros
 #Calcular a soma dos numeros
 #imprimir a soma dos numeros pares
-#imprimir a soma dos numeros impares
+#imprimir a soma dos numeros impares (SERIAM OS PRIMOS)
 primos = []
 impares = []
 a = 0
