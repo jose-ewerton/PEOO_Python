@@ -55,9 +55,27 @@ N4 = Projeto (50% rodando no terminal, 50% a interface)
 
 
 Arthur, Felipe Damião e Diogo - (1)
+	Tema 1
+	Primeiro erro kkk foi o de mostrar um campo que não seria utilizado.
+	Nota 95
 Luis Miguel, Guilherme Melo, Guilherme Ferreira - (4)
+	Fizaram um trabalho legal
+	Quem fez o que?
+	Interface meio estranha
+	Erros para adicionar e listar
+	Um  pouco de erros em listar
+	
+	Nota 70!
+
 Pedro Lucas, Felipe Victor, Evandro (1)
+	Não usou interface gráfica
+	Começaram um pouco;
+	A função atualizar ficou meio pela metade, mas faz!
+	Nota 55!
+
 Clara Lima, Iuri Souza, Maria Clara (2)
+
+
 Maria Luiza, Bianca Jennifer, Marilia Gabriela, José Diego (2)
 	Usaram PySimpleGUI
 	Se preocuparam com adicões iguais;
@@ -67,7 +85,15 @@ Maria Luiza, Bianca Jennifer, Marilia Gabriela, José Diego (2)
 	Nota 10!
 
 Ian Guilherme, Jessica Natalia, Natasha Rodrigues (2)
+	Usaram o GitHub no projeto
+	Interface massa!
+	Fizeram algum tratamento de dados? Alem dos medicos
+	Investiram em label de imagens massa srsr
+	Se a mesma pessoa tiver 2 consultas no mes...Escolher qual é a consulta de atualizar !Massa!
+	isso de ficar grande tem a ver com o container pai
 
+	100
+	
 
 
 
