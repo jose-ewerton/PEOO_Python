@@ -27,7 +27,7 @@ class Pessoa:
   def estado(self):
     """
     forneca a saude de 1 a 10
-    """"
+    """
     e = Pessoa
     e.saude = float(input("qual o estado de saude?:"))
     if e.saude <= 3:
