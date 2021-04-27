@@ -12,4 +12,4 @@ def soma(*num):
   print("A soma dos números informados são:", sum(n))
   print("A quantidade de números informados são: ", q)
 
-soma(2,2,2)
+soma(2,2,2,4)

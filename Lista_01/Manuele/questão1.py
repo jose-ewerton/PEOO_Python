@@ -16,8 +16,7 @@ for s in range (0, 15):
     sa = sa + a
     if a > mma and s.upper() == "F":
         mma = a
-    if a <75.6
-        hmb and s.upper() == "M":
+    if a < 75.6 and s.upper() == "M":
         hmb = a
     if a > 1.70 and s.upper() == "M":
         nh17 = nh17 + 1
