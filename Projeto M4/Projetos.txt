@@ -74,6 +74,13 @@ Pedro Lucas, Felipe Victor, Evandro (1)
 	Nota 55!
 
 Clara Lima, Iuri Souza, Maria Clara (2)
+	Esta com adicionar e deletar (faltou atualizar e listar)
+	Listar não seria simples (já lista abaixo não precisa listar)
+	Atualizar quais foram as dificuldades?
+	Quem fez o que?
+	Não havia necessidade de mostrar no terminal, se conseguiu lançar
+	na interface
+	
 
 
 Maria Luiza, Bianca Jennifer, Marilia Gabriela, José Diego (2)
