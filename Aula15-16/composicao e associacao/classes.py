@@ -1,4 +1,10 @@
-''' Uma classe empresa que é composta por departamentos e agrega funcionarios da classe funcionario '''
+''' Uma classe empresa que é composta por departamentos e agrega funcionarios da classe funcionario 
+
+Empresa x Departamento é um relacionamento de COMPOSIÇÂO
+(Similar a questão 2 da lista 06)
+Departamento x Funcionários é um relacionamento de AGREGAÇÂO
+(Similar a questão 3 da lista 06)
+'''
 
 class Empresa:
     def __init__(self,nome,cnpj):
@@ -39,7 +45,7 @@ class Departamento:
         self.numero_funcionarios = 0
         self.funcionarios = []
     
-    def inserir_funcionario(self,funcionario):
+    def inserir_funcionario(self,funcionario): # passando um funcionario, isso representa a gregação
         self.funcionarios.append(funcionario)
         self.numero_funcionarios += 1
 
