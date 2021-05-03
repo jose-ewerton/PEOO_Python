@@ -6,4 +6,4 @@ def conca(*strings):
     return x
 
 
-print(conca())
+print(conca('jo','ja'))

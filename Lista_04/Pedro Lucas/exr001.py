@@ -6,4 +6,4 @@ def soma(*args):
     return x
 
 
-print(soma(4,8,10))
+print(soma(4,8,1))
