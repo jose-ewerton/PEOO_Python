@@ -18,7 +18,7 @@ homempeso = 0
 nomepeso = 0
 h = 0
 m = 0
-for p in range(1, 5):
+for p in range(1, 16):
     print('----- {}° Pessoa -----'.format(p))
     nome = str(input('Informe o nome:')).strip()
     altura = float(input('Informe a altura:'))
@@ -49,10 +49,10 @@ for p in range(1, 5):
         h += 1
     else:
         m += 1
-porhomem = h*100 / 4
-pormulher = m*100 / 4
+porhomem = h*100 / 15
+pormulher = m*100 / 15
 print('-'*12)
-medalt = somalt / 4
+medalt = somalt / 15
 print('A média de altura do grupo é {}'.format(medalt))
 print('A mulher mais alta tem {} de altura e se chama {}'.format(mulheralta, nomealta))
 print('O homem mais baixo do grupo tem {} de altura e se chama {}'.format(homembaixo, nomebaixo))
