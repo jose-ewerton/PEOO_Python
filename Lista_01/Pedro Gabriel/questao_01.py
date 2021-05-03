@@ -16,7 +16,7 @@ peso_m = [] #Peso das mulheres.
 
 cont = 0
 
-while cont < 15:
+while cont < 5:
     genero = input("Qual o seu genero: ") #Informe apenas com Masculino ou Femenino!
 
     if genero == "Masculino":

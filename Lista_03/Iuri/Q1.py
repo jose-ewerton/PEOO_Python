@@ -5,5 +5,5 @@ def soma(*ls):
   print(f"A soma dos {ls} temos {s}")
 
 
-soma(10, 69, 77)
+soma(1, 1, 1)
 soma(69, 34, 24, 4)

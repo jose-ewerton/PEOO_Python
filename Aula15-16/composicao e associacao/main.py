@@ -13,7 +13,6 @@ dep.inserir_funcionario(func2)
 dep.inserir_funcionario(func3)
 dep.listar_funcionarios_no_dep()
 
-
 ''' del func deleta o objeto, variaveis etc.
 print(dep.nome_departamento)
 print(func.nome)
