@@ -1,4 +1,4 @@
-
+'''
 #valores
 n = []
 s = []
@@ -24,3 +24,10 @@ while True:
         s.pop()
         print(somaequantidade(a))
         break
+'''
+def soma(*args):
+    return sum(args)
+
+print(soma(10,1,1))
+
+

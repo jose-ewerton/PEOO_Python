@@ -54,6 +54,9 @@ N3 = L5,L6
 N4 = Projeto (50% rodando no terminal, 50% a interface)
 
 
+Wellen, Yasmin, Sarah é Gabriela
+
+
 Arthur, Felipe Damião e Diogo - (1)
 	Tema 1
 	Primeiro erro kkk foi o de mostrar um campo que não seria utilizado.
@@ -174,7 +177,6 @@ chamado o widget superior/mãe/boot
 e vai executar em outra Thread 
 
 existe o import do kivy
-
 
 
 

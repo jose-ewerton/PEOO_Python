@@ -14,7 +14,7 @@ total_mulheres = 0
 
  
 
-for c in range(1, 16):
+for c in range(0, 5):
 
     print('{}primeira pessoa'.format(c))
 
@@ -64,11 +64,11 @@ for c in range(1, 16):
 
  
 
-mediaaltura = somaaltura / 15
+mediaaltura = somaaltura / 5
 
-porcentagemhomem = total_homens*100/15
+porcentagemhomem = total_homens*100/5
 
-porcentagemmulher = total_mulheres*100/15
+porcentagemmulher = total_mulheres*100/5
 
  
 

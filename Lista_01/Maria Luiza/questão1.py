@@ -41,9 +41,9 @@ for v in range(1, 4):
     if sexo in 'F' and altura > mulheralta:
         mulheralta = altura
 
-mediaaltura = somaaltura / 15
-porcentagemhomem = homens*100/15
-porcentagemmulher = mulheres*100/15
+mediaaltura = somaaltura / 4
+porcentagemhomem = homens*100/4
+porcentagemmulher = mulheres*100/4
 
 print('\033[1m'f"A média de altura foi de: {mediaaltura:.2f}")
 print(f"A mulher mais alta tem {mulheralta} de altura.")

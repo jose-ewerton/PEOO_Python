@@ -9,7 +9,7 @@ total_mulheres = 0
 
 
 #Código Principal
-for c in range(1, 16):
+for c in range(1, 6):
     print('{}ª PESSOA'.format(c))
     sexo = str(input("Sexo(Masculino ou Feminino): ")).lower().strip()
     peso = int(input("Peso: "))
@@ -35,9 +35,9 @@ for c in range(1, 16):
         mulheralta = altura
 
 #valores finais
-mediaaltura = somaaltura / 15
-porcentagemhomem = total_homens*100/15
-porcentagemmulher = total_mulheres*100/15
+mediaaltura = somaaltura / 5
+porcentagemhomem = total_homens*100/5
+porcentagemmulher = total_mulheres*100/5
 
 
 #saída

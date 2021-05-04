@@ -5,7 +5,7 @@ bom = 0
 médiaótimo = 0
 
 #código principal
-for p in range(1, 16):
+for p in range(1, 6):
     idade = int(input("idade: "))
     op = int(input("digite o número referente a sua opnião sobre o filme?"
               " 1=regular/2=bom/3=ótimo:"))
@@ -22,7 +22,7 @@ for p in range(1, 16):
 
 #valores finais
 médiaótimo = médiaótimo/ótimo
-porcentagem = bom*100/15
+porcentagem = bom*100/5
 
 #saída
 print("As pessoas que responderam 'ÓTIMO' tem em média {} anos.".format(médiaótimo))

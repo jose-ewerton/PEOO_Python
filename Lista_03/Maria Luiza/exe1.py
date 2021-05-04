@@ -1,6 +1,6 @@
 """Faça um programa, cum uma função que necessite de um número variável de argumentos não
 nomeados e forneça a soma e quantidade de argumentos informados."""
-
+'''
 numeros = []
 s = []
 
@@ -21,3 +21,10 @@ while True:
         s.pop()
         print(soma_contador(a))
         break
+'''
+
+
+def soma(*args):
+    return sum(args)
+
+print(soma(1,1,1,1,1,1,1))

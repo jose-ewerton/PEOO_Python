@@ -36,8 +36,6 @@ print("a soma dos números ímpares: {}").format(somaimpares)
 
  
 
-questao3.
-
 ótimo = 0
 
 regular = 0
