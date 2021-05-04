@@ -1,13 +1,21 @@
-def soma3(par1, par2, par3, par4):
-    return (par1 + par2 + par3 + par4)
+print('Para parar a soma digite 0:')
+def soma(lista):
+    l = lista
+    cont = 0
+    soma = 0
+    for i in range(len(l)):
+        soma += l[i]
+        cont += 1
+    return soma
 
-numero1 = int(input("Digite um número:"))
-numero2 = int(input("Digite um número:"))
-numero3 = int(input("Digite um número:"))
-numero4 = int(input("Digite um número:"))
+l = []
+while True:
+    n = int(input('Numero: '))
+    if n == 0:
+        break
+    l.append(n)
+    quant = len(l)
 
-print("a soma é", soma3(numero1,numero2, numero3, numero4))
-def soma3(a, b, c, d):
-    s = a + b + c + d
-    return s
+l = soma(l)
+print(f"A soma dos {quant} números é: {l}")
 
