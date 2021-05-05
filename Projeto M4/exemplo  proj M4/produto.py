@@ -1,5 +1,3 @@
-
-
 class Produto:
     def __init__(self): # vale 1 ponto
         pass

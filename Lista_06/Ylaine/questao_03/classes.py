@@ -1,4 +1,7 @@
-from endereco import Endereco
+class Endereco:
+    def __init__(self):
+        pass
+
 
 class Pessoa:
     def __init__(self):
@@ -9,4 +12,3 @@ class Pessoa:
 
     def listar_enderecos(self):
         pass
-
