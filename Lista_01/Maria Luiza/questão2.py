@@ -7,10 +7,11 @@ somaimpares = 0
 somaprimos = 0
 for n in range(1, 11):
     a = int(input("Digite um número:"))
-    if a % n == 0:
+    #for só pra essa condição
+    if a % 1 == 0 and a % a == 0:
         somaprimos += a
         primos.append(a)
-    elif a % n != 0:
+    if a % 2 != 0:
         somaimpares += a
         impares.append(a)
 

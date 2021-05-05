@@ -23,8 +23,10 @@ for p in range(1, 16):
     else:
         print('\033[31m'"NÚMERO INVÁLIDO"'\033[31m')
         break
-
-médiaótimo = médiaótimo/ótimo
+if ótimo != 0:
+    médiaótimo = médiaótimo/ótimo  #E SE NINGUÉM ACHAR ÓTIMO
+else:
+    print("Ótimo foi 0")
 porcentagem = bom*100/15
 print('\033[1m'f"A média de idade das pessoas que responderam 'ÓTIMO' foi {médiaótimo}")
 print(f"{regular} pessoas responderam 'REGULAR'!")

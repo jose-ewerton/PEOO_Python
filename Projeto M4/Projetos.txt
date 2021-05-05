@@ -54,6 +54,9 @@ N3 = L5,L6
 N4 = Projeto (50% rodando no terminal, 50% a interface)
 
 
+Wellen, Yasmin, Sarah é Gabriela
+
+
 Arthur, Felipe Damião e Diogo - (1)
 	Tema 1
 	Primeiro erro kkk foi o de mostrar um campo que não seria utilizado.
@@ -74,6 +77,13 @@ Pedro Lucas, Felipe Victor, Evandro (1)
 	Nota 55!
 
 Clara Lima, Iuri Souza, Maria Clara (2)
+	Esta com adicionar e deletar (faltou atualizar e listar)
+	Listar não seria simples (já lista abaixo não precisa listar)
+	Atualizar quais foram as dificuldades?
+	Quem fez o que?
+	Não havia necessidade de mostrar no terminal, se conseguiu lançar
+	na interface
+	
 
 
 Maria Luiza, Bianca Jennifer, Marilia Gabriela, José Diego (2)
@@ -93,6 +103,10 @@ Ian Guilherme, Jessica Natalia, Natasha Rodrigues (2)
 	isso de ficar grande tem a ver com o container pai
 
 	100
+
+Ylaine, Kleytiane, 
+	Fizeram muito pouco
+
 	
 
 
@@ -166,8 +180,14 @@ existe o import do kivy
 
 
 
-
 Gerenciamento de recursos das escolas municipais;
+
+
+Wellen Grazielly
+Vinicius
+Pedro Gabriel
+Sarah Regina
+Jose Diego
 
 
 
