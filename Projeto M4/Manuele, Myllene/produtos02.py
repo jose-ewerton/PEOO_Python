@@ -6,6 +6,13 @@ class Produto:
         self.preco = preco
         self.lista_produtos = []
 
+    
+  
+    def listar(self):
+        for item in self.lista_produtos:
+            print(item.ident,item.nome,item.marca,item.preco)
+
+      
     def adicionar(self,ident,nome,marca,preco):
         self.lista_produtos.append(Produto(ident,nome,marca,preco))
 
@@ -13,13 +20,4 @@ class Produto:
         pass
     def atualizar(self):
         pass
-    def listar(self):
-        for item in self.lista_produtos:
-            print(item.ident,item.nome,item.marca,item.preco)
-
-if (__name__ == "__main__"):
-    p1 = Produto()
-    p1.adicionar(1,2,"Show",4)
-    p1.adicionar(1,2,"Show2",4)
-    p1.adicionar(1,2,"Show3",4)
-    p1.listar()
+    

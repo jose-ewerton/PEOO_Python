@@ -66,4 +66,4 @@ if (__name__ == '__main__'):
     p.atualizar(nome = 'macarrão', marca = 'Adria', cod = '013', valor = 'R$ 8,00')
     p.listar()
     p.atualizar(nome = 'requeijão', marca = 'Nestle', cod = '056', valor = 'R$ 7,50')
-    r.listar()
+    p.listar()
